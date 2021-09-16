@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/GirlAppFrontend/precache-manifest.989fe0c66eaa5e0874f3b735378794aa.js"
+  "/GirlAppFrontend/precache-manifest.b0ae3932f6bd5c0e0fac91969e159178.js"
 );
 
 workbox.clientsClaim();
