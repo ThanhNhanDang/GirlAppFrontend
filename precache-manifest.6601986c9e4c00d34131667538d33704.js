@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "f8a9021e533ae89c4f03",
-    "url": "/GirlAppFrontend/static/js/main.f8a9021e.chunk.js"
+    "revision": "7e9975c40079b2a79c94",
+    "url": "/GirlAppFrontend/static/js/main.7e9975c4.chunk.js"
   },
   {
     "revision": "268cf3c079677d538b49",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/GirlAppFrontend/static/js/runtime~main.ef5b28a9.js"
   },
   {
-    "revision": "7ec35cbc0f00cefc23d695fc1bcb6ce6",
+    "revision": "8d2315dedc06adc299863901c76177b3",
     "url": "/GirlAppFrontend/index.html"
   }
 ];
