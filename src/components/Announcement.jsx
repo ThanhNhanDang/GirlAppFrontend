@@ -13,7 +13,8 @@ const Container = styled.div`
 `;
 
 const Announcement = () => {
-  return <Container>Super Deal! free Shipping on Orders Over $50</Container>;
+  return <Container>
+  Ưu đãi siêu khủng! Giao hàng miễn phí cho các đơn đặt hàng trên $ 50</Container>;
 };
 
 export default Announcement;

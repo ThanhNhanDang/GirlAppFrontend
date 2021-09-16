@@ -64,7 +64,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
+          <Language>VN</Language>
           <SearchContainer>
             <Input/>
             <Search style={{
@@ -76,8 +76,8 @@ const Navbar = () => {
           <Logo>GIRL APP</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>ĐĂNG KÝ</MenuItem>
+          <MenuItem>ĐĂNG NHẬP</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
