@@ -35,6 +35,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  outline: none;
 `;
 
 const Center = styled.div`
@@ -67,13 +68,16 @@ const Navbar = () => {
           <Language>VN</Language>
           <SearchContainer>
             <Input/>
-            <Search style={{
-              color: "gray", fontSize: 16
-            }}/>
+            <Search
+              style={{
+                color: "gray",
+                fontSize: 16,
+              }}
+            />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>GIRL APP</Logo>
+          <Logo>GIRL APP.</Logo>
         </Center>
         <Right>
           <MenuItem>ĐĂNG KÝ</MenuItem>
