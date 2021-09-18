@@ -2,11 +2,17 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data.jsx";
+import { mobile } from "../reponsive";
+
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
+  overflow: hidden;
+  ${mobile({
+    height: "60vh",
+  })}
 `;
 
 const Arrow = styled.div`
@@ -46,13 +52,23 @@ const Slide = styled.div`
 const ImageContainer = styled.div`
   height: 100%;
   flex: 1;
+  ${mobile({
+    height: "80%",
+  })}
 `;
 
 const Image = styled.img`
   height: 100%;
+  object-fit: cover;
+   ${mobile({
+     height: "90%"
+  })}
 `;
 const InfoContainer = styled.div`
   flex: 1;
+  ${mobile({
+    display:"none"
+  })}
 `;
 const Title = styled.h1`
   font-size: 70px;
@@ -78,9 +94,9 @@ const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderItems.length-1);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderItems.length - 1);
     } else {
-      setSlideIndex(slideIndex < sliderItems.length-1 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < sliderItems.length - 1 ? slideIndex + 1 : 0);
     }
   };
   return (
@@ -90,7 +106,7 @@ const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
-          <Slide bg={item.bg}key={item.id} >
+          <Slide bg={item.bg} key={item.id}>
             <ImageContainer>
               <Image src={item.img} />
             </ImageContainer>

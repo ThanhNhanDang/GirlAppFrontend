@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {mobile} from "../reponsive";
 const Info = styled.div`
   opacity: 0;
   position: absolute;
@@ -28,6 +29,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${mobile({height:"40vh"})}
 `;
 const Title = styled.h1`
   color: white;
